@@ -524,7 +524,7 @@
         "wamsStorageAccountName": "[concat(toLower(parameters('clusterName')), 'wamssa')]",
         "mediaServicesAccountName": "[concat(toLower(parameters('clusterName')), 'wamsmedia')]",
         "storageAccountType": "Standard_LRS",
-        "storageContainer": "[concat('https://', variables('storageAccountName'),'.blob.core.windows.net/vhds/')]",
+        "storageContainer": "[concat('https://', variables('storageAccountName'),'.blob.core.chinacloudapi.cn/')]",
 
         "loadBalancerName": "[concat(parameters('clusterName'), '-lb-', parameters('deploymentSlot'))]",
         "virtualNetworkName": "[concat(parameters('clusterName'), '-vnet')]",
